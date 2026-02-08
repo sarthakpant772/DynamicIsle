@@ -143,7 +143,7 @@ MIT License - free to use, modify, and distribute.
 
 ## Author
 
-Built by [Sarthak Pant](https://linkedin.com/in/yourprofile)
+Built by [Sarthak Pant](https://www.linkedin.com/in/pant-sarthak/)
 
 ---
 
