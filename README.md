@@ -1,150 +1,144 @@
-# DynamicIsle
+<div align="center">
 
-A free, open-source macOS app that brings the Dynamic Island experience to your Mac. A floating, animated overlay at the top-center of your screen that shows music, timers, meetings, AI chat, and more.
+# 🏝️ DynamicIsle
 
-![macOS](https://img.shields.io/badge/macOS-13.0+-blue)
-![Swift](https://img.shields.io/badge/Swift-5.9-orange)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-5-purple)
-![License](https://img.shields.io/badge/License-MIT-green)
+### Dynamic Island for macOS — Free & Open Source
 
-## Features
+**Bring the iPhone's Dynamic Island to your Mac. Music controls, voice notes with AI, meeting alerts, timers, and more — all in a beautiful floating pill.**
 
-### Now Playing
-Shows currently playing music from Spotify or Apple Music with full playback controls.
+[![macOS 13+](https://img.shields.io/badge/macOS-13.0+-black?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/macos/)
+[![Swift 5.9](https://img.shields.io/badge/Swift-5.9-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/sarthakpant772/DynamicIsle?style=for-the-badge&color=gold)](https://github.com/sarthakpant772/DynamicIsle/stargazers)
 
-### Voice Notes with AI
-Record voice memos, transcribe them automatically, and use local AI (Ollama) to make them concise. Save and view your note history.
+[**Download**](https://github.com/sarthakpant772/DynamicIsle/releases/latest) · [Report Bug](https://github.com/sarthakpant772/DynamicIsle/issues) · [Request Feature](https://github.com/sarthakpant772/DynamicIsle/issues)
 
-### AI Quick Access
-Press ⌘J to instantly ask questions. Supports Claude and OpenAI APIs.
+---
 
-### Meeting Join Button
-Automatically detects Zoom, Google Meet, Teams, and Webex meetings from your calendar. One-click join button appears 5 minutes before.
+<!-- Add a GIF/video demo here for maximum impact -->
+<!-- ![DynamicIsle Demo](assets/demo.gif) -->
 
-### Timer
-Countdown timers with visual progress ring and quick presets.
+</div>
 
-### Calendar
-Upcoming events from your calendar with time-until indicators.
+## ✨ Features
 
-### Pomodoro Focus Mode
-Full Pomodoro timer (25/5/15 minute cycles) with app blocking. Hides distracting apps during focus sessions.
+| Feature | Description |
+|---------|-------------|
+| 🎵 **Now Playing** | Control Spotify & Apple Music right from the island |
+| 🎙️ **Voice Notes + AI** | Speak → Transcribe → AI makes it concise (local Ollama) |
+| 💬 **AI Chat** | Press `⌘J` for instant Claude/ChatGPT access |
+| 📅 **Calendar** | See upcoming events at a glance |
+| 📹 **Meeting Join** | One-click join for Zoom, Meet, Teams, Webex |
+| ⏱️ **Timer** | Beautiful countdown with progress ring |
+| 🧠 **Focus Mode** | Pomodoro timer + blocks distracting apps |
+| 📋 **Clipboard** | History of your last 10 copies |
 
-### Clipboard History
-Tracks your last 10 clipboard items. Click to copy back.
-
-## Demo
-
-```
-         ┌────────────────────────────┐
-         │     🎵  Dynamic Isle       │  ← Hover to reveal
-         └────────────────────────────┘
-
-    ┌────────────────────────────────────────┐
-    │  ← Back                                │
-    │                                        │
-    │  🎵 Now Playing                        │
-    │  Song Title - Artist Name              │
-    │   advancement                            │
-    │       ◀️    ▶️    ▶️▶️                  │
-    └────────────────────────────────────────┘
-```
-
-## Installation
+## 🚀 Quick Start
 
 ### Download
-Download the latest release from [Releases](https://github.com/yourusername/DynamicIsle/releases).
+
+👉 **[Download Latest Release](https://github.com/sarthakpant772/DynamicIsle/releases/latest)**
+
+> ⚠️ **First launch:** Right-click → Open → Open (to bypass Gatekeeper)
 
 ### Build from Source
 
 ```bash
-git clone https://github.com/yourusername/DynamicIsle.git
+git clone https://github.com/sarthakpant772/DynamicIsle.git
 cd DynamicIsle
 open DynamicIsle.xcodeproj
+# Press ⌘R to build and run
 ```
 
-Then press ⌘R to build and run.
-
-### Voice Notes Setup (Optional)
-For the AI-powered voice notes feature, install Ollama:
+### Enable Voice Notes AI (Optional)
 
 ```bash
 brew install ollama
 ollama serve
-ollama pull llama3.2
+ollama pull llama3.2  # or any model you prefer
 ```
 
-## Usage
+## 🎯 How It Works
 
-- **Move cursor to top-center** of screen to reveal the island
-- **Click features** to switch between them
-- **Press ⌘J** for AI quick access
-- **Click Back** to return to home
+1. **Move cursor to top-center** of your screen → Island appears
+2. **Click any feature** to use it
+3. **Press `⌘J`** for instant AI chat
+4. **Move cursor away** → Island hides
 
-### Quick Actions
-| Icon | Feature |
-|------|---------|
-| 🎵 | Music controls |
-| ✨ | AI chat |
-| 🧠 | Focus mode |
-| ⏱️ | Timer |
-| 🎙️ | Voice notes |
-| 📅 | Calendar |
-| 📹 | Meetings |
+## 🛠️ Tech Stack
 
-## Permissions
+- **SwiftUI** — Modern declarative UI
+- **AppKit** — Native window management
+- **Speech Framework** — Voice transcription
+- **EventKit** — Calendar integration
+- **Ollama** — Local LLM for AI features
 
-| Permission | Purpose |
-|------------|---------|
-| Microphone | Voice notes recording |
-| Speech Recognition | Transcription |
-| Calendar | Events and meeting detection |
-| Automation | Spotify/Apple Music control |
+## 📸 Screenshots
 
-## Project Structure
+<details>
+<summary>Click to expand</summary>
 
 ```
-DynamicIsle/
-├── App/                    # App entry point
-├── Core/Window/            # Floating window management
-├── Features/
-│   ├── Island/             # Main container
-│   ├── NowPlaying/         # Spotify/Apple Music
-│   ├── VoiceNotes/         # Voice recording + AI
-│   ├── AI/                 # Claude/OpenAI chat
-│   ├── Timer/              # Countdown timers
-│   ├── Calendar/           # Calendar events
-│   ├── Meeting/            # Meeting detection
-│   ├── Focus/              # Pomodoro + app blocking
-│   └── Clipboard/          # Clipboard history
-├── Settings/
-├── MenuBar/
-└── Resources/
+    ┌────────────────────────────────────────┐
+    │  🎵 Now Playing                        │
+    │  Bohemian Rhapsody - Queen             │
+    │   advancement━━━━━━━━━━━━━━━━━━━━━━━━━━━━│
+    │       ◀◀    ▶    ▶▶                    │
+    └────────────────────────────────────────┘
+
+    ┌────────────────────────────────────────┐
+    │  🎙️ Voice Notes                        │
+    │  "Meeting with John about the..."      │
+    │                                        │
+    │     🔴 Recording...    ✨ Make Concise │
+    └────────────────────────────────────────┘
 ```
 
-## Tech Stack
+</details>
 
-- **SwiftUI** - UI framework
-- **AppKit** - Window management
-- **Speech** - Voice recognition
-- **EventKit** - Calendar integration
-- **Ollama** - Local LLM for voice notes
+## 🤝 Contributing
 
-## Contributing
+Contributions make open source amazing! Any contributions are **greatly appreciated**.
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## License
+## 🗺️ Roadmap
 
-MIT License - free to use, modify, and distribute.
+- [ ] Custom themes & colors
+- [ ] Spotify lyrics integration
+- [ ] System stats (CPU, RAM, Network)
+- [ ] AirPods battery status
+- [ ] Widgets API for custom extensions
+- [ ] iPhone mirroring integration
 
-## Author
+## 📄 License
 
-Built by [Sarthak Pant](https://www.linkedin.com/in/pant-sarthak/)
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 💖 Support
+
+If you like this project, please consider:
+- ⭐ **Starring** this repository
+- 🐛 **Reporting bugs** to help improve it
+- 📢 **Sharing** with friends and on social media
+
+## 👨‍💻 Author
+
+**Sarthak Pant**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pant-sarthak/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sarthakpant772)
 
 ---
 
-If you find this useful, give it a ⭐ on GitHub!
+<div align="center">
+
+**If this project helped you, please ⭐ star it!**
+
+Made with ❤️ and mass amounts of ☕
+
+</div>
