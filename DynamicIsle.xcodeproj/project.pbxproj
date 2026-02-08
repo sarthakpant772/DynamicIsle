@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1000001 /* DynamicIsleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000001; };
+		F1000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000002; };
+		F1000003 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000003; };
+		F1000004 /* IslandWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000004; };
+		F1000005 /* IslandWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000005; };
+		F1000006 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000006; };
+		F1000007 /* IslandContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000007; };
+		F1000008 /* CollapsedIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000008; };
+		F1000009 /* ExpandedIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000009; };
+		F1000010 /* IslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000010; };
+		F1000011 /* MediaRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000011; };
+		F1000012 /* NowPlayingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000012; };
+		F1000013 /* NowPlayingCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000013; };
+		F1000014 /* NowPlayingExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000014; };
+		F1000015 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000015; };
+		F1000016 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000016; };
+		F1000017 /* TimerCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000017; };
+		F1000018 /* TimerExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000018; };
+		F1000019 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000019; };
+		F1000020 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000020; };
+		F1000021 /* CalendarCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000021; };
+		F1000022 /* CalendarExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000022; };
+		F1000023 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000023; };
+		F1000024 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000024; };
+		F1000025 /* NotificationCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000025; };
+		F1000026 /* NotificationExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000026; };
+		F1000027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000027; };
+		F1000028 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000028; };
+		F1000029 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000029; };
+		F1000030 /* AIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000030; };
+		F1000031 /* AICollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000031; };
+		F1000032 /* AIExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000032; };
+		F1000033 /* MeetingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000033; };
+		F1000034 /* MeetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000034; };
+		F1000035 /* MeetingCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000035; };
+		F1000036 /* MeetingExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000036; };
+		F1000037 /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000037; };
+		F1000038 /* ClipboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000038; };
+		F1000039 /* ClipboardCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000039; };
+		F1000040 /* ClipboardExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000040; };
+		F1000041 /* FocusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000041; };
+		F1000042 /* FocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000042; };
+		F1000043 /* FocusCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000043; };
+		F1000044 /* FocusExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000044; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0000001 /* DynamicIsle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicIsle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2000001 /* DynamicIsleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIsleApp.swift; sourceTree = "<group>"; };
+		F2000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2000003 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		F2000004 /* IslandWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandWindow.swift; sourceTree = "<group>"; };
+		F2000005 /* IslandWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandWindowController.swift; sourceTree = "<group>"; };
+		F2000006 /* ScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManager.swift; sourceTree = "<group>"; };
+		F2000007 /* IslandContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandContainerView.swift; sourceTree = "<group>"; };
+		F2000008 /* CollapsedIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedIslandView.swift; sourceTree = "<group>"; };
+		F2000009 /* ExpandedIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedIslandView.swift; sourceTree = "<group>"; };
+		F2000010 /* IslandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandViewModel.swift; sourceTree = "<group>"; };
+		F2000011 /* MediaRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteService.swift; sourceTree = "<group>"; };
+		F2000012 /* NowPlayingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewModel.swift; sourceTree = "<group>"; };
+		F2000013 /* NowPlayingCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollapsedView.swift; sourceTree = "<group>"; };
+		F2000014 /* NowPlayingExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingExpandedView.swift; sourceTree = "<group>"; };
+		F2000015 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		F2000016 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		F2000017 /* TimerCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCollapsedView.swift; sourceTree = "<group>"; };
+		F2000018 /* TimerExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExpandedView.swift; sourceTree = "<group>"; };
+		F2000019 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		F2000020 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		F2000021 /* CalendarCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollapsedView.swift; sourceTree = "<group>"; };
+		F2000022 /* CalendarExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExpandedView.swift; sourceTree = "<group>"; };
+		F2000023 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F2000024 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		F2000025 /* NotificationCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCollapsedView.swift; sourceTree = "<group>"; };
+		F2000026 /* NotificationExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExpandedView.swift; sourceTree = "<group>"; };
+		F2000027 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F2000028 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		F2000029 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		F2000030 /* AIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIViewModel.swift; sourceTree = "<group>"; };
+		F2000031 /* AICollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICollapsedView.swift; sourceTree = "<group>"; };
+		F2000032 /* AIExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIExpandedView.swift; sourceTree = "<group>"; };
+		F2000033 /* MeetingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingService.swift; sourceTree = "<group>"; };
+		F2000034 /* MeetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewModel.swift; sourceTree = "<group>"; };
+		F2000035 /* MeetingCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCollapsedView.swift; sourceTree = "<group>"; };
+		F2000036 /* MeetingExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingExpandedView.swift; sourceTree = "<group>"; };
+		F2000037 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardService.swift; sourceTree = "<group>"; };
+		F2000038 /* ClipboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardViewModel.swift; sourceTree = "<group>"; };
+		F2000039 /* ClipboardCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCollapsedView.swift; sourceTree = "<group>"; };
+		F2000040 /* ClipboardExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardExpandedView.swift; sourceTree = "<group>"; };
+		F2000041 /* FocusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusService.swift; sourceTree = "<group>"; };
+		F2000042 /* FocusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewModel.swift; sourceTree = "<group>"; };
+		F2000043 /* FocusCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCollapsedView.swift; sourceTree = "<group>"; };
+		F2000044 /* FocusExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusExpandedView.swift; sourceTree = "<group>"; };
+		F2000045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2000046 /* DynamicIsle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DynamicIsle.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4000001 = {
+			isa = PBXGroup;
+			children = (
+				F4000002 /* DynamicIsle */,
+				F4000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4000002 /* DynamicIsle */ = {
+			isa = PBXGroup;
+			children = (
+				F4000004 /* App */,
+				F4000005 /* Core */,
+				F4000006 /* Features */,
+				F4000007 /* Settings */,
+				F4000008 /* MenuBar */,
+				F4000009 /* Resources */,
+			);
+			path = DynamicIsle;
+			sourceTree = "<group>";
+		};
+		F4000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0000001 /* DynamicIsle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2000001 /* DynamicIsleApp.swift */,
+				F2000002 /* AppDelegate.swift */,
+				F2000003 /* PermissionsManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F4000010 /* Window */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F4000010 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				F2000004 /* IslandWindow.swift */,
+				F2000005 /* IslandWindowController.swift */,
+				F2000006 /* ScreenManager.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		F4000006 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F4000011 /* Island */,
+				F4000012 /* NowPlaying */,
+				F4000013 /* Timer */,
+				F4000014 /* Calendar */,
+				F4000015 /* Notifications */,
+				F4000016 /* AI */,
+				F4000017 /* Meeting */,
+				F4000018 /* Clipboard */,
+				F4000019 /* Focus */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F4000011 /* Island */ = {
+			isa = PBXGroup;
+			children = (
+				F4000020 /* Views */,
+				F4000021 /* ViewModels */,
+			);
+			path = Island;
+			sourceTree = "<group>";
+		};
+		F4000020 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000007 /* IslandContainerView.swift */,
+				F2000008 /* CollapsedIslandView.swift */,
+				F2000009 /* ExpandedIslandView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000021 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000010 /* IslandViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000012 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				F4000022 /* Services */,
+				F4000023 /* ViewModels */,
+				F4000024 /* Views */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		F4000022 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000011 /* MediaRemoteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000023 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000012 /* NowPlayingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000024 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000013 /* NowPlayingCollapsedView.swift */,
+				F2000014 /* NowPlayingExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000013 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F4000025 /* Services */,
+				F4000026 /* ViewModels */,
+				F4000027 /* Views */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		F4000025 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000015 /* TimerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000026 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000016 /* TimerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000027 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000017 /* TimerCollapsedView.swift */,
+				F2000018 /* TimerExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000014 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F4000028 /* Services */,
+				F4000029 /* ViewModels */,
+				F4000030 /* Views */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F4000028 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000019 /* CalendarService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000029 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000020 /* CalendarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000030 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000021 /* CalendarCollapsedView.swift */,
+				F2000022 /* CalendarExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000015 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F4000031 /* Services */,
+				F4000032 /* ViewModels */,
+				F4000033 /* Views */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F4000031 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000023 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000032 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000024 /* NotificationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000033 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000025 /* NotificationCollapsedView.swift */,
+				F2000026 /* NotificationExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000016 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				F4000034 /* Services */,
+				F4000035 /* ViewModels */,
+				F4000036 /* Views */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		F4000034 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000029 /* AIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000035 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000030 /* AIViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000036 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000031 /* AICollapsedView.swift */,
+				F2000032 /* AIExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000017 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				F4000037 /* Services */,
+				F4000038 /* ViewModels */,
+				F4000039 /* Views */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		F4000037 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000033 /* MeetingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000038 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000034 /* MeetingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000039 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000035 /* MeetingCollapsedView.swift */,
+				F2000036 /* MeetingExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000018 /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4000040 /* Services */,
+				F4000041 /* ViewModels */,
+				F4000042 /* Views */,
+			);
+			path = Clipboard;
+			sourceTree = "<group>";
+		};
+		F4000040 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000037 /* ClipboardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000041 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000038 /* ClipboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000042 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000039 /* ClipboardCollapsedView.swift */,
+				F2000040 /* ClipboardExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000019 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				F4000043 /* Services */,
+				F4000044 /* ViewModels */,
+				F4000045 /* Views */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		F4000043 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000041 /* FocusService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000044 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000042 /* FocusViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000045 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000043 /* FocusCollapsedView.swift */,
+				F2000044 /* FocusExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000007 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4000046 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4000046 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000027 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4000008 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2000028 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		F4000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2000045 /* Info.plist */,
+				F2000046 /* DynamicIsle.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5000001 /* DynamicIsle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6000001;
+			buildPhases = (
+				F5000002 /* Sources */,
+				F3000001 /* Frameworks */,
+				F5000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicIsle;
+			productName = DynamicIsle;
+			productReference = F0000001 /* DynamicIsle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F5000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F8000001;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4000001;
+			productRefGroup = F4000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5000001 /* DynamicIsle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1000001 /* DynamicIsleApp.swift in Sources */,
+				F1000002 /* AppDelegate.swift in Sources */,
+				F1000003 /* PermissionsManager.swift in Sources */,
+				F1000004 /* IslandWindow.swift in Sources */,
+				F1000005 /* IslandWindowController.swift in Sources */,
+				F1000006 /* ScreenManager.swift in Sources */,
+				F1000007 /* IslandContainerView.swift in Sources */,
+				F1000008 /* CollapsedIslandView.swift in Sources */,
+				F1000009 /* ExpandedIslandView.swift in Sources */,
+				F1000010 /* IslandViewModel.swift in Sources */,
+				F1000011 /* MediaRemoteService.swift in Sources */,
+				F1000012 /* NowPlayingViewModel.swift in Sources */,
+				F1000013 /* NowPlayingCollapsedView.swift in Sources */,
+				F1000014 /* NowPlayingExpandedView.swift in Sources */,
+				F1000015 /* TimerService.swift in Sources */,
+				F1000016 /* TimerViewModel.swift in Sources */,
+				F1000017 /* TimerCollapsedView.swift in Sources */,
+				F1000018 /* TimerExpandedView.swift in Sources */,
+				F1000019 /* CalendarService.swift in Sources */,
+				F1000020 /* CalendarViewModel.swift in Sources */,
+				F1000021 /* CalendarCollapsedView.swift in Sources */,
+				F1000022 /* CalendarExpandedView.swift in Sources */,
+				F1000023 /* NotificationService.swift in Sources */,
+				F1000024 /* NotificationViewModel.swift in Sources */,
+				F1000025 /* NotificationCollapsedView.swift in Sources */,
+				F1000026 /* NotificationExpandedView.swift in Sources */,
+				F1000027 /* SettingsView.swift in Sources */,
+				F1000028 /* MenuBarView.swift in Sources */,
+				F1000029 /* AIService.swift in Sources */,
+				F1000030 /* AIViewModel.swift in Sources */,
+				F1000031 /* AICollapsedView.swift in Sources */,
+				F1000032 /* AIExpandedView.swift in Sources */,
+				F1000033 /* MeetingService.swift in Sources */,
+				F1000034 /* MeetingViewModel.swift in Sources */,
+				F1000035 /* MeetingCollapsedView.swift in Sources */,
+				F1000036 /* MeetingExpandedView.swift in Sources */,
+				F1000037 /* ClipboardService.swift in Sources */,
+				F1000038 /* ClipboardViewModel.swift in Sources */,
+				F1000039 /* ClipboardCollapsedView.swift in Sources */,
+				F1000040 /* ClipboardExpandedView.swift in Sources */,
+				F1000041 /* FocusService.swift in Sources */,
+				F1000042 /* FocusViewModel.swift in Sources */,
+				F1000043 /* FocusCollapsedView.swift in Sources */,
+				F1000044 /* FocusExpandedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F9000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F9000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DynamicIsle/Resources/DynamicIsle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicIsle/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Dynamic Isle needs access to your calendar to display upcoming events.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dynamicisle.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F9000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DynamicIsle/Resources/DynamicIsle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicIsle/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Dynamic Isle needs access to your calendar to display upcoming events.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dynamicisle.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6000001 /* Build configuration list for PBXNativeTarget "DynamicIsle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9000003 /* Debug */,
+				F9000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8000001 /* Build configuration list for PBXProject "DynamicIsle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9000001 /* Debug */,
+				F9000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7000001 /* Project object */;
+}
