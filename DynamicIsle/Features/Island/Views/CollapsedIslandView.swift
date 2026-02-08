@@ -31,6 +31,9 @@ struct CollapsedIslandView: View {
             case .focus:
                 FocusCollapsedView(viewModel: viewModel.focusViewModel)
 
+            case .voiceNotes:
+                VoiceNotesCollapsedView(viewModel: viewModel.voiceNotesViewModel)
+
             case .idle:
                 IdleCollapsedView()
             }

@@ -30,6 +30,10 @@
 	<string>Dynamic Isle needs access to your calendar to display upcoming events in the island.</string>
 	<key>NSAppleEventsUsageDescription</key>
 	<string>Dynamic Isle needs to control Spotify and Apple Music to display Now Playing information and playback controls.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Dynamic Isle needs speech recognition to transcribe your voice notes.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Dynamic Isle needs microphone access to record voice notes for transcription.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2024. All rights reserved.</string>
 	<key>NSPrincipalClass</key>

@@ -56,6 +56,9 @@ struct ExpandedIslandView: View {
                 case .focus:
                     FocusExpandedView(viewModel: viewModel.focusViewModel)
 
+                case .voiceNotes:
+                    VoiceNotesExpandedView(viewModel: viewModel.voiceNotesViewModel)
+
                 case .idle:
                     IdleExpandedView(viewModel: viewModel)
                 }
@@ -104,10 +107,10 @@ struct IdleExpandedView: View {
                 )
 
                 QuickActionButton(
-                    icon: "doc.on.clipboard",
-                    label: "Clipboard",
-                    color: .orange,
-                    action: { viewModel.switchToMode(.clipboard) }
+                    icon: "waveform",
+                    label: "Voice",
+                    color: .green,
+                    action: { viewModel.switchToMode(.voiceNotes) }
                 )
             }
 

@@ -51,6 +51,10 @@
 		F1000042 /* FocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000042; };
 		F1000043 /* FocusCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000043; };
 		F1000044 /* FocusExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000044; };
+		F1000045 /* VoiceNotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000047; };
+		F1000046 /* VoiceNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000048; };
+		F1000047 /* VoiceNotesExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000049; };
+		F1000048 /* VoiceNotesCollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2000050; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +105,10 @@
 		F2000044 /* FocusExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusExpandedView.swift; sourceTree = "<group>"; };
 		F2000045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2000046 /* DynamicIsle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DynamicIsle.entitlements; sourceTree = "<group>"; };
+		F2000047 /* VoiceNotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesService.swift; sourceTree = "<group>"; };
+		F2000048 /* VoiceNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesViewModel.swift; sourceTree = "<group>"; };
+		F2000049 /* VoiceNotesExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesExpandedView.swift; sourceTree = "<group>"; };
+		F2000050 /* VoiceNotesCollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesCollapsedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,7 @@
 				F4000017 /* Meeting */,
 				F4000018 /* Clipboard */,
 				F4000019 /* Focus */,
+				F4000050 /* VoiceNotes */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -494,6 +503,41 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F4000050 /* VoiceNotes */ = {
+			isa = PBXGroup;
+			children = (
+				F4000051 /* Services */,
+				F4000052 /* ViewModels */,
+				F4000053 /* Views */,
+			);
+			path = VoiceNotes;
+			sourceTree = "<group>";
+		};
+		F4000051 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2000047 /* VoiceNotesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4000052 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2000048 /* VoiceNotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4000053 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2000049 /* VoiceNotesExpandedView.swift */,
+				F2000050 /* VoiceNotesCollapsedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F4000007 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +683,10 @@
 				F1000042 /* FocusViewModel.swift in Sources */,
 				F1000043 /* FocusCollapsedView.swift in Sources */,
 				F1000044 /* FocusExpandedView.swift in Sources */,
+				F1000045 /* VoiceNotesService.swift in Sources */,
+				F1000046 /* VoiceNotesViewModel.swift in Sources */,
+				F1000047 /* VoiceNotesExpandedView.swift in Sources */,
+				F1000048 /* VoiceNotesCollapsedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

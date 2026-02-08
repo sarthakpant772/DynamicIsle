@@ -12,6 +12,7 @@ enum IslandMode: Equatable {
     case meeting
     case clipboard
     case focus
+    case voiceNotes
 }
 
 /// Main view model for the Dynamic Island
@@ -29,6 +30,7 @@ class IslandViewModel: ObservableObject {
     @Published var meetingViewModel: MeetingViewModel
     @Published var clipboardViewModel: ClipboardViewModel
     @Published var focusViewModel: FocusViewModel
+    @Published var voiceNotesViewModel: VoiceNotesViewModel
 
     // MARK: - Private Properties
 
@@ -45,6 +47,7 @@ class IslandViewModel: ObservableObject {
         self.meetingViewModel = MeetingViewModel()
         self.clipboardViewModel = ClipboardViewModel()
         self.focusViewModel = FocusViewModel()
+        self.voiceNotesViewModel = VoiceNotesViewModel()
 
         setupModeObservers()
         setupGlobalHotkeys()
