@@ -39,7 +39,11 @@
 
 👉 **[Download Latest Release](https://github.com/sarthakpant772/DynamicIsle/releases/latest)**
 
-> ⚠️ **First launch:** Right-click → Open → Open (to bypass Gatekeeper)
+> ⚠️ **First launch (important):**
+> ```bash
+> xattr -cr /Applications/DynamicIsle.app
+> ```
+> Then double-click to open. This removes macOS quarantine for unsigned apps.
 
 ### Build from Source
 
