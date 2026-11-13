@@ -13,6 +13,7 @@ enum IslandMode: Equatable {
     case clipboard
     case focus
     case voiceNotes
+    case fileShelf
 }
 
 /// Main view model for the Dynamic Island
